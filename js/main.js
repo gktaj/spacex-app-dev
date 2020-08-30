@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
             `;
-        }): loadList.innerHTML+="<p>No answer for selected filter from api</p>";
+        }): loadList.innerHTML="<p>No answer for selected filter from API or API server may be down</p>";
         document.querySelector('.loading').style.display ="none";
     });
     function loadData(params1,params2,params3) {
@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
                 `;
-            }): loadList.innerHTML+="No answer for selected filter from api";
+            }): loadList.innerHTML="<p>No answer for selected filter from API or API server may be down</p>";
         });
         document.querySelector('.loading').style.display ="none";
     }
